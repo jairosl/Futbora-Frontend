@@ -15,7 +15,7 @@ export function Home() {
         </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.cardLogin}>
+        <form className={styles.cardLogin}>
           <div className={styles.logoContainer}>
             <img src={logo} alt="Logo" />
           </div>
@@ -41,7 +41,7 @@ export function Home() {
           <div className={styles.imageContainer}>
             <img src={jogador} alt="imagem Jogador" />
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
