@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
+
 import jogador from '../../assets/jogador.png';
 import logo from '../../assets/logo.png';
 import player from '../../assets/player.svg';
 import styles from './styles.module.scss';
-
 export function Home() {
   return (
     <div className={styles.container}>
@@ -27,17 +28,17 @@ export function Home() {
             <label htmlFor="password">Senha: </label>
             <input type="password" name="password" placeholder="Senha" />
           </div>
-          <div className={styles.linkPassword}>
+          <Link to={'/signUp'} className={styles.linkPassword}>
             <p>
-              <a href="/">Esqueceu sua senha? </a>
+              <a>Esqueceu sua senha? </a>
             </p>
-          </div>
+          </Link>
           <button className={styles.btn}>Login</button>
-          <div className={styles.link}>
+          <Link to={'/signUp'} className={styles.link}>
             <p>
-              <a href="/">Criar conta</a>
+              <a>Criar conta</a>
             </p>
-          </div>
+          </Link>
           <div className={styles.imageContainer}>
             <img src={jogador} alt="imagem Jogador" />
           </div>

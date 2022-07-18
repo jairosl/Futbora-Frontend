@@ -1,16 +1,16 @@
-import './index.css';
 import './styles/global.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-//import App from './App';
-import { Home } from './components/Home';
+import Routes from './routes';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/**<App />**/}
-    <Home />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
 );
